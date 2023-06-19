@@ -4,7 +4,6 @@ function myAge(){
 }
 function ageCalculate(me){
     let today = new Date();
-    console.log(document.getElementById('input-date').value)
     let inputDate = new Date(document.getElementById('input-date').value);
     if (me){
         document.getElementById('input-date').value = '2005-01-24';
