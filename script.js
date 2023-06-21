@@ -9,9 +9,9 @@ function until() {
 function ageCalculate(me) {
     let today = new Date();
     if (me == `untilDown`) {
-        untilDate = Date.parse(`2024-06-20`);
+        untilDate = Date.parse(`2023-08-31`);
         todayDate = Date.parse(today);
-        untilDays = Math.floor((untilDate-todayDate)/1000/60/60/24);
+        untilDays = Math.ceil((untilDate-todayDate)/1000/60/60/24);
         if (untilDays > 0){
             document.querySelector('.untilDays').textContent = untilDays;
         } else {
